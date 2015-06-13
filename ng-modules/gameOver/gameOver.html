@@ -3,8 +3,9 @@
 	<div class="image-container">
 		<img ng-src="{{gameOverCtrl.data.gameDir}}/assets/backgrounds/gameover.png">
 	</div>
-		<li class="game-over-text">
-			<br>
+
+	<div class="game-over-text">
+		<p>
 			All of the people in your crew have died.
 
 			<br>
@@ -12,24 +13,26 @@
 			Many ships fail to make it all the way to Europa.
 
 			<br>
-		</li>
-    <span class="spacecraft">
-        <img ng-src="{{gameOverCtrl.data.ship.sheet.src}}">
-    </span>
+		</p>
+	</div>
 
-    <br>
+  <span class="spacecraft">
+      <img ng-src="{{gameOverCtrl.data.ship.sheet.src}}">
+  </span>
 
-    <span class="spaceman">
-        <img ng-src="{{gameOverCtrl.data.gameDir}}/assets/characters/Z2_sprite.png">
-    </span>
-    <span class="spaceman-2">
-        <img ng-src="{{gameOverCtrl.data.gameDir}}/assets/characters/Z2_sprite.png">
-    </span>
-    <span class="spaceman-3">
-        <img ng-src="{{gameOverCtrl.data.gameDir}}/assets/characters/Z2_sprite.png">
-    </span>
+  <br>
 
-    <br>
+  <span class="spaceman">
+      <img ng-src="{{gameOverCtrl.data.gameDir}}/assets/characters/Z2_sprite.png">
+  </span>
+  <span class="spaceman-2">
+      <img ng-src="{{gameOverCtrl.data.gameDir}}/assets/characters/Z2_sprite.png">
+  </span>
+  <span class="spaceman-3">
+      <img ng-src="{{gameOverCtrl.data.gameDir}}/assets/characters/Z2_sprite.png">
+  </span>
+
+  <br>
 
   <button class="btn btn-primary ng-click-active" ng-click="$emit('switchToModule', 'main-menu')"> Click here to start a new adventure </button>
 
